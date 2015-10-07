@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/barra_oscura"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/lblPagina"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_1"
+                android:gravity="right"
+                android:text="@string/pagina_ficha"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="?android:textColorTertiary"
+                android:textSize="@dimen/text_1"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/lblTitulo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_1"
+                android:gravity="center"
+                android:text="@string/plan_trabajo_inripcion"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="?android:textColorTertiary"
+                android:textSize="@dimen/text_3"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/lblNumero"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.9"
+                android:gravity="center"
+                android:paddingRight="@dimen/margin_1"
+                android:background="@drawable/barra"
+                android:text="@string/nro_bandeja"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="?android:textColorSecondary"
+                android:textSize="@dimen/text_1"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/lblTObejtivo"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.8"
+                android:gravity="center"
+                android:paddingRight="@dimen/margin_1"
+                android:background="@drawable/barra"
+                android:text="@string/objetivo_inripcion"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="?android:textColorSecondary"
+                android:textSize="@dimen/text_1"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lblTActividad"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.8"
+                android:gravity="center"
+                android:background="@drawable/barra"
+                android:text="@string/actividad_inripcion"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="?android:textColorSecondary"
+                android:textSize="@dimen/text_1"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lblTMeta"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.8"
+                android:gravity="center"
+                android:background="@drawable/barra"
+                android:text="@string/meta_inripcion"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="?android:textColorSecondary"
+                android:textSize="@dimen/text_1"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lblTCronograma"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.8"
+                android:gravity="center"
+                android:background="@drawable/barra"
+                android:text="@string/cronograma_inripcion"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="?android:textColorSecondary"
+                android:textSize="@dimen/text_1"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/lblTResponsable"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.8"
+                android:gravity="center"
+                android:background="@drawable/barra"
+                android:text="@string/responsable_inripcion"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="?android:textColorSecondary"
+                android:textSize="@dimen/text_1"
+                android:textStyle="bold" />
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_agregar"
+                android:gravity="center"
+                android:textSize="@dimen/text_3"
+                android:layout_weight="0.8"
+                android:textColor="?android:textColorTertiary"
+                android:background="@drawable/button_red"
+                android:id="@+id/btnAgregar" />
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listPlanTrabajo"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"/>
+
+    </LinearLayout>
+</LinearLayout>

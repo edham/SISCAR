@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_1"
+    android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/lblNumero"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/barra_clara"
+            android:layout_weight="0.9"
+            android:text="@string/nro_bandeja"
+            android:minHeight="@dimen/dimen_3"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="?android:textColorSecondary"
+            android:textSize="@dimen/text_2"
+            android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lblVer"
+        android:background="@drawable/barra_clara"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:minHeight="@dimen/dimen_3"
+        android:layout_weight="0.9"
+        android:text="@string/ver_bandeja"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="?android:textColorSecondary"
+        android:textSize="@dimen/text_2"
+        android:textStyle="bold" />
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.7"
+        android:background="@drawable/barra_clara"
+        android:gravity="center"
+        android:minHeight="@dimen/dimen_3"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lblOrganismo"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="@string/oraganismo_bandeja"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="?android:textColorSecondary"
+            android:textSize="@dimen/text_2"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.7"
+        android:background="@drawable/barra_clara"
+        android:gravity="center"
+        android:minHeight="@dimen/dimen_3"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lblIntegrante"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="@string/integrante_bandeja"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="?android:textColorSecondary"
+            android:textSize="@dimen/text_2"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/lblActividad"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/barra_clara"
+        android:minHeight="@dimen/dimen_3"
+        android:gravity="center"
+        android:layout_weight="0.8"
+        android:text="@string/actividad_bandeja"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="?android:textColorSecondary"
+        android:textSize="@dimen/text_2"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/lblFecha"
+        android:background="@drawable/barra_clara"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/dimen_3"
+        android:gravity="center"
+        android:layout_weight="0.8"
+        android:text="@string/fecha_bandeja"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="?android:textColorSecondary"
+        android:textSize="@dimen/text_2"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/lblEstado"
+        android:background="@drawable/barra_clara"
+        android:minHeight="@dimen/dimen_3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight="0.8"
+        android:text="@string/estado_bandeja"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="?android:textColorSecondary"
+        android:textSize="@dimen/text_2"
+        android:textStyle="bold" />
+
+
+
+
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:minHeight="@dimen/dimen_3"
+            android:gravity="center"
+            android:background="@drawable/barra_clara"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/chkEnviar" />
+
+        </LinearLayout>
+
+
+</LinearLayout>

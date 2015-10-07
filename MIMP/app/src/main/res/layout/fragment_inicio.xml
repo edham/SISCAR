@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:gravity="center"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:orientation="vertical">
+<LinearLayout android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center|right"
+    android:layout_marginTop="@dimen/margin_1"
+    android:layout_marginBottom="@dimen/margin_1"
+    android:orientation="horizontal">
+    <Button
+        android:layout_width="@dimen/dimen_20"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/margin_3"
+        android:text="@string/btn_enviar"
+        android:gravity="center"
+        android:textSize="@dimen/text_2"
+        android:textColor="?android:textColorTertiary"
+        android:background="@drawable/button_red"
+        android:id="@+id/btnEnviar" />
+    <Button
+        android:layout_width="@dimen/dimen_20"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/margin_3"
+        android:text="@string/btn_nuevo"
+        android:gravity="center"
+        android:textSize="@dimen/text_2"
+        android:textColor="?android:textColorTertiary"
+        android:background="@drawable/button_red"
+        android:id="@+id/btnNuevo" />
+</LinearLayout>
+
+<LinearLayout android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_1"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/lblNumero"
+            android:background="@drawable/barra"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="0.9"
+            android:text="@string/nro_bandeja"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="?android:textColorSecondary"
+            android:textSize="@dimen/text_2"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/lblVer"
+            android:background="@drawable/barra"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="0.9"
+            android:text="@string/ver_bandeja"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="?android:textColorSecondary"
+            android:textSize="@dimen/text_2"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/lblOrganismo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="0.7"
+            android:background="@drawable/barra"
+            android:text="@string/oraganismo_bandeja"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="?android:textColorSecondary"
+            android:textSize="@dimen/text_2"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/lblIntegrante"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/barra"
+            android:gravity="center"
+            android:layout_weight="0.7"
+            android:text="@string/integrante_bandeja"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="?android:textColorSecondary"
+            android:textSize="@dimen/text_2"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/lblActividad"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/barra"
+            android:gravity="center"
+            android:layout_weight="0.8"
+            android:text="@string/actividad_bandeja"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="?android:textColorSecondary"
+            android:textSize="@dimen/text_2"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/lblFecha"
+            android:background="@drawable/barra"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="0.8"
+            android:text="@string/fecha_bandeja"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="?android:textColorSecondary"
+            android:textSize="@dimen/text_2"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/lblSeleccion"
+            android:background="@drawable/barra"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="0.8"
+            android:text="@string/estado_bandeja"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="?android:textColorSecondary"
+            android:textSize="@dimen/text_2"
+            android:textStyle="bold" />
+        <TextView
+            android:background="@drawable/barra"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:layout_weight="0.9"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="?android:textColorSecondary"
+            android:textSize="@dimen/text_2"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <ListView
+        android:id="@+id/listBandeja"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+</LinearLayout>
+
+
+
+</LinearLayout>

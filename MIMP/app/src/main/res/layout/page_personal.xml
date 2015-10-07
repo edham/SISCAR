@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/barra_oscura"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/lblPagina"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_1"
+                    android:gravity="right"
+                    android:text="@string/pagina_ficha"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="?android:textColorTertiary"
+                    android:textSize="@dimen/text_1"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/lblTitulo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_1"
+                    android:gravity="center"
+                    android:text="@string/personal_trabaja_inripcion"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="?android:textColorTertiary"
+                    android:textSize="@dimen/text_3"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/lblNumero"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.9"
+                android:gravity="center"
+                android:paddingRight="@dimen/margin_1"
+                android:background="@drawable/barra"
+                android:text="@string/nro_bandeja"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="?android:textColorSecondary"
+                android:textSize="@dimen/text_1"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/lblNombres"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.7"
+                android:gravity="center"
+                android:paddingRight="@dimen/margin_1"
+                android:background="@drawable/barra"
+                android:text="@string/nombres_ficha"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="?android:textColorSecondary"
+                android:textSize="@dimen/text_1"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lblEdad"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.9"
+                android:gravity="center"
+                android:background="@drawable/barra"
+                android:text="@string/edad_inripcion"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="?android:textColorSecondary"
+                android:textSize="@dimen/text_1"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lblSexo"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.9"
+                android:gravity="center"
+                android:background="@drawable/barra"
+                android:text="@string/sexo_inripcion"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="?android:textColorSecondary"
+                android:textSize="@dimen/text_1"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lblProfesion"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.7"
+                android:gravity="center"
+                android:background="@drawable/barra"
+                android:text="@string/profesion_inripcion"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="?android:textColorSecondary"
+                android:textSize="@dimen/text_1"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/lblCargo"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.7"
+                android:gravity="center"
+                android:background="@drawable/barra"
+                android:text="@string/cargo_inscripcion_anexo_1"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="?android:textColorSecondary"
+                android:textSize="@dimen/text_1"
+                android:textStyle="bold" />
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_agregar"
+                android:gravity="center"
+                android:textSize="@dimen/text_3"
+                android:layout_weight="0.8"
+                android:textColor="?android:textColorTertiary"
+                android:background="@drawable/button_red"
+                android:id="@+id/btnAgregar" />
+
+        </LinearLayout>
+        <ListView
+            android:id="@+id/listPersonal"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="@dimen/margin_1"
+            android:layout_height="fill_parent"/>
+
+    </LinearLayout>
+</LinearLayout>

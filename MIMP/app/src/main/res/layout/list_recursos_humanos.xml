@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/lblNRHContador"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:minHeight="@dimen/dimen_5"
+        android:background="@drawable/barra_clara"
+        android:layout_weight="1"
+        android:text="@string/nro_bandeja"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="?android:textColorSecondary"
+        android:textSize="@dimen/text_2"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.6"
+        android:gravity="center"
+        android:background="@drawable/barra_clara"
+        android:minHeight="@dimen/dimen_5"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/lblNombre"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="?android:textColorSecondary"
+            android:textSize="@dimen/text_2"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.9"
+        android:gravity="center"
+        android:background="@drawable/barra_clara"
+        android:minHeight="@dimen/dimen_5"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/lblCantidad"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="?android:textColorSecondary"
+            android:textSize="@dimen/text_2"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_eliminarr"
+        android:gravity="center"
+        android:textSize="@dimen/text_3"
+        android:layout_weight="0.7"
+        android:textColor="?android:textColorTertiary"
+        android:background="@drawable/button_grey"
+        android:id="@+id/btnEliminar" />
+
+
+</LinearLayout>

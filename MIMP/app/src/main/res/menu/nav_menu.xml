@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:checked="true"
+            android:icon="@drawable/inicio"
+            android:title="@string/home_item" />
+
+
+
+        <!-- Sección de configuración -->
+        <item
+            android:title="@string/configuracion_item">
+            <menu>
+                <item
+                    android:id="@+id/nav_actualizar"
+                    android:icon="@drawable/actualizar"
+                    android:title="@string/actualizar_item" />
+                <item
+                    android:id="@+id/nav_ayuda"
+                    android:icon="@drawable/ayuda"
+                    android:title="@string/ayuda_item" />
+                <item
+                    android:id="@+id/nav_cerrar"
+                    android:icon="@drawable/salir"
+                    android:title="@string/cerrar_item" />
+            </menu>
+        </item>
+    </group>
+
+</menu>

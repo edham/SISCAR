@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dimen_100"
+    android:layout_height="wrap_content"
+    android:background="@drawable/barra_clara"
+    android:orientation="vertical">
+
+
+
+
+
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/barra"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/lblDResponsable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="@dimen/margin_1"
+            android:text="@string/cuadro_resumen_inripcion"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="?android:textColorSecondary"
+            android:textSize="@dimen/text_2"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/margin_1"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/lblObejtivo"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="3"
+            android:gravity="right|center"
+            android:paddingRight="@dimen/margin_1"
+            android:background="@drawable/barra_clara"
+            android:text="@string/objetivo_inripcion"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="?android:textColorSecondary"
+            android:textSize="@dimen/text_1"
+            android:textStyle="bold" />
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_texto"
+            android:textSize="@dimen/text_2"
+            android:typeface="normal"
+            android:inputType="textMultiLine"
+            android:gravity="center"
+            android:layout_weight="0.6"
+            android:textColor="?android:textColorSecondary"
+            android:background="@drawable/border_text_1"
+            android:id="@+id/txtObejtivo" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/margin_1"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/lblActividad"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="3"
+            android:gravity="right|center"
+            android:paddingRight="@dimen/margin_1"
+            android:background="@drawable/barra_clara"
+            android:text="@string/actividad_inripcion"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="?android:textColorSecondary"
+            android:textSize="@dimen/text_1"
+            android:textStyle="bold" />
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_texto"
+            android:textSize="@dimen/text_2"
+            android:typeface="normal"
+            android:inputType="textMultiLine"
+            android:gravity="center"
+            android:layout_weight="0.6"
+            android:textColor="?android:textColorSecondary"
+            android:background="@drawable/border_text_1"
+            android:id="@+id/txtActividad" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/margin_1"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/lblMeta"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="3"
+            android:gravity="right|center"
+            android:paddingRight="@dimen/margin_1"
+            android:background="@drawable/barra_clara"
+            android:text="@string/meta_inripcion"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="?android:textColorSecondary"
+            android:textSize="@dimen/text_1"
+            android:textStyle="bold" />
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_texto"
+            android:textSize="@dimen/text_2"
+            android:typeface="normal"
+            android:inputType="textMultiLine"
+            android:gravity="center"
+            android:layout_weight="0.6"
+            android:textColor="?android:textColorSecondary"
+            android:background="@drawable/border_text_1"
+            android:id="@+id/txtMeta" />
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/margin_1"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/lblCronograma"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="right|center"
+            android:paddingRight="@dimen/margin_1"
+            android:background="@drawable/barra_clara"
+            android:text="@string/cronograma_inripcion"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="?android:textColorSecondary"
+            android:textSize="@dimen/text_1"
+            android:textStyle="bold" />
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:gravity="center"
+            android:textColor="?android:textColorSecondary"
+            android:hint="@string/hint_numero"
+            android:textSize="@dimen/text_2"
+            android:background="@drawable/border_text_1"
+            android:id="@+id/txtCronograma" />
+        <TextView
+            android:id="@+id/lblResponsable"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="right|center"
+            android:paddingRight="@dimen/margin_1"
+            android:background="@drawable/barra_clara"
+            android:text="@string/responsable_inripcion"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="?android:textColorSecondary"
+            android:textSize="@dimen/text_1"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:gravity="center"
+            android:textColor="?android:textColorSecondary"
+            android:hint="@string/hint_texto"
+            android:textSize="@dimen/text_2"
+            android:background="@drawable/border_text_1"
+            android:id="@+id/txtResponsable" />
+        />
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_1"
+        android:layout_marginRight="@dimen/margin_1"
+        android:layout_marginTop="@dimen/margin_1"
+        android:layout_marginBottom="@dimen/margin_1"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="@dimen/dimen_30"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_agregar"
+            android:gravity="center"
+            android:textSize="@dimen/text_3"
+            android:textColor="@color/blanco"
+            android:background="@drawable/button_grey"
+            android:id="@+id/btnAgregar" />
+    </LinearLayout>
+
+</LinearLayout>

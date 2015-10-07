@@ -1,0 +1,189 @@
+<resources>
+
+
+    <string name="action_settings">Settings</string>
+    <string name="action_mas">+</string>
+    <string name="action_menos">-</string>
+    <!--INICIO DRAWER -->
+    <string name="app_name">SISCAR</string>
+    <string name="app_mimp">MINISTERIO DE LA MUJER Y POBLACIONES VULNERABLESMINISTERIO DE LA MUJER Y POBLACIONES VULNERABLES</string>
+
+
+    <string name="home_item">BANDEJA</string>
+    <string name="inscripcion_item">INSCRIPCIÓN</string>
+    <string name="visita_item">VISITA</string>
+    <string name="acreditacion_item">ACREDITACIÓN</string>
+    <string name="monitoreo_item">MONITOREO</string>
+    <string name="actualizar_item">ACTUALIZAR</string>
+    <string name="ayuda_item">AYUDA</string>
+    <string name="cerrar_item">CERRAR SESIÓN</string>
+    <string name="configuracion_item">CONFIGURACIÓN</string>
+
+
+    <string name="inisio_sesion_mimp">INICIAR SESION</string>
+    <string name="credenciales_minp">INGRESAR CREDENCIALES</string>
+    <string name="usuario_minp">USUARIO</string>
+    <string name="contrasenna_minp">CONTRASEÑA</string>
+
+
+    <!--FIN DRAWER -->
+
+    <string name="btn_ubicar">UBICAR</string>
+    <string name="btn_agregar">AGREGAR</string>
+    <string name="btn_aceptar">ACEPTAR</string>
+    <string name="btn_cancelar">CANCELAR</string>
+    <string name="btn_eliminarr">ELIMINAR</string>
+    <string name="btn_grabar">GRABAR</string>
+    <string name="btn_finalizar">FINALIZAR</string>
+    <string name="btn_siguiente">SIGUIENTE</string>
+    <string name="btn_ir">IR</string>
+    <string name="btn_enviar">ENVIAR</string>
+    <string name="btn_nuevo">NUEVO</string>
+    <string name="btn_ver">VER</string>
+    <string name="btn_ocultar">OCULTAR</string>
+
+    <string name="alert_retroceder">¿DESEA RETROCEDER?</string>
+    <string name="spinner_seleccione">SELECCIONE</string>
+
+    <string name="anexo_1">ANEXO N° 1</string>
+    <string name="anexo_2">ANEXO N° 2</string>
+    <string name="anexo_3">ANEXO N° 3</string>
+    <string name="anexo_4">ANEXO N° 4</string>
+
+    <string name="hint_numero">NÚMEROS</string>
+    <string name="hint_digitos">DIGITOS</string>
+    <string name="hint_texto">TEXTO</string>
+    <!--INICIO INSCRIPCION -->
+    <string name="inscripcion_ficha">SOLICITUD - FICHA DE INSCRIPCIÓN</string>
+        <!--INICIO INSCRIPCION ANEXO1 -->
+        <string name="titulo_inscripcion_anexo_1">FICHA DE REGISTRO ORGANISMOS PRIVADOS Y COMUNALES</string>
+        <string name="datos_generales_inscripcion_anexo_1">DATOS GENERALES</string>
+        <string name="nidentificacion_inscripcion_anexo_1">N° DE IDENTIFICACIÓN</string>
+        <string name="fec_solicitud_inscripcion_anexo_1">FECHA DE SOLICITUD</string>
+        <string name="fec_creacion_inscripcion_anexo_1">FECHA DE CREACIÓN</string>
+        <string name="ninstitucion_inscripcion_anexo_1">NOM. INSTITUCIÓN</string>
+        <string name="catinstitucion_inscripcion_anexo_1">CAT. INSTITUCIONAL</string>
+        <string name="nruc_inscripcion_anexo_1">N° DE R.U.C.</string>
+        <string name="datos_responsable_inscripcion_anexo_1">DATOS DEL RESPONSABLE</string>
+        <string name="ape_paterno_inscripcion_anexo_1">APE. PATERNO</string>
+        <string name="ape_materno_inscripcion_anexo_1">APE. MATERNO</string>
+        <string name="nombres_inscripcion_anexo_1">NOMBRES</string>
+        <string name="cargo_inscripcion_anexo_1">CARGO</string>
+        <string name="telefono_inscripcion_anexo_1">TELEFONO</string>
+        <string name="ubi_fisica_inscripcion_anexo_1">UBICACIÓN FISICA</string>
+        <string name="dir_sede_inscripcion_anexo_1">DIR. SEDE PRINCIPAL (URB/AV/JR/ETC)</string>
+         <string name="ubi_sede_inscripcion_anexo_1">DEPA/PROVI/DIST</string>
+        <string name="fono_sede_inscripcion_anexo_1">TELEFONO</string>
+        <string name="fax_sede_inscripcion_anexo_1">FAX</string>
+        <string name="web_sede_inscripcion_anexo_1">DIR. WEB</string>
+        <string name="email_sede_inscripcion_anexo_1">E-MAIL</string>
+        <string name="hor_atencion_inscripcion_anexo_1">HORARIOS DE ATENCIÓN</string>
+        <string name="tip_local_inscripcion_anexo_1">EL LOCAL ES</string>
+        <string name="inf_tecnica_inscripcion_anexo_1">INFORMACIÓN TÉCNICA</string>
+        <string name="obj_principal_inscripcion_anexo_1">OBJETIVO PRINCIPAL</string>
+        <string name="pro_ejecutados_inscripcion_anexo_1">PROGRAMAS EJECUTADOS EN FORMA CONJUNTA CON OTRAS INTITUCIONES</string>
+        <string name="tiem_duracion_inscripcion_anexo_1">TIEMPO DE DURACIÓN</string>
+        <string name="int_responsable_inscripcion_anexo_1">INTITUCIÓN RESPONSABLE</string>
+        <string name="pre_fuentes_inscripcion_anexo_1">PRESUPUESTO Y FUENTES DE FINACIAMIENTO</string>
+        <string name="rubros_inscripcion_anexo_1">RUBROS</string>
+        <string name="valor_inscripcion_anexo_1">VALOR</string>
+
+        <string name="operativo_inscripcion_anexo_1">OPERATIVO O ADMINISTRATIVO</string>
+        <string name="programas_inscripcion_anexo_1">PROGRAMAS</string>
+        <string name="inversion_inscripcion_anexo_1">INVERSIÓN</string>
+        <string name="total_inscripcion_anexo_1">TOTAL</string>
+
+    <string name="tipo_inscripcion_anexo_1">TIPO</string>
+    <string name="sub_tipo_inscripcion_anexo_1">SUB TIPO</string>
+
+    <string name="fuen_principal_inscripcion_anexo_1">FUENTE PRINCIPAL DE FINANCIAMIENTO</string>
+        <string name="obeservaciones_inscripcion_anexo_1">OBSERVACIONES</string>
+
+        <string name="sel_ubicacion_inscripcion_anexo_1">SELECCIONE UNA UBICACIÓN</string>
+        <!--FIN INSCRIPCION ANEXO1 -->
+
+        <!--INICIO INSCRIPCION ANEXO2 -->
+        <string name="titulo_inscripcion_anexo_2">REGISTRO PROGRAMAS, PROYECTOS, ALBERGUES U HOGARES</string>
+        <string name="datos_generales_inscripcion_anexo_2">DATOS GENERALES DEL PROGRAMA, PROYECTO, ALBERGUE U HOGAR</string>
+        <!--FIN INSCRIPCION ANEXO2 -->
+    <string name="personal_trabaja_inripcion">PERSONAL QUE TRABAJA EN LA INSTITUCIÓN.</string>
+    <string name="plan_trabajo_inripcion">ESQUEMA DE PLAN DE TRABAJO.</string>
+    <string name="cuadro_resumen_inripcion">CUADRO DE RESUMEN</string>
+    <string name="sexo_inripcion">SEXO</string>
+    <string name="edad_inripcion">EDAD</string>
+    <string name="profesion_inripcion">PROFESIÓN</string>
+
+    <string name="actividad_inripcion">ACTIVIDAD</string>
+    <string name="meta_inripcion">META</string>
+    <string name="cronograma_inripcion">CRONOGRAMA</string>
+    <string name="responsable_inripcion">RESPONSABLE</string>
+    <string name="objetivo_inripcion">OBJETIVO</string>
+    <!--FIN INSCRIPCION -->
+
+    <!-- <string name="bandeja">ACTIVIDADES REALIZADAS</string>-->
+     <string name="nro_bandeja">N°</string>
+     <string name="ver_bandeja">VER</string>
+     <string name="oraganismo_bandeja">ORGANISMO</string>
+     <string name="integrante_bandeja">INTEGRANTES</string>
+     <string name="actividad_bandeja">ACTIVIDAD</string>
+     <string name="fecha_bandeja">FECHA</string>
+     <string name="estado_bandeja">ESTADO</string>
+     <string name="seleccion_bandeja">SELECCIÓN</string>
+     <string-array name="array">
+         <item >EJEMPLO 1</item>
+         <item >EJEMPLO 2</item>
+         <item >EJEMPLO 3</item>
+         <item >EJEMPLO 4</item>
+         <item >EJEMPLO 5</item>
+         <item >EJEMPLO 6</item>
+     </string-array>
+
+     <string name="eliminar_dialog">¿DESEA ELIMINAR?</string>
+     <string name="nt_camas_ficha">N° TOTAL DE CAMAS</string>
+     <string name="nt_cunas_ficha">N° TOTAL DE CUNAS</string>
+     <string name="at_disponible_ficha">ÁREA TOTAL DISPONIBLE (M^2)</string>
+     <string name="at_construida_ficha">ÁREA TOTAL CONSTRUIDA (M^2)</string>
+     <string name="a_libre_ficha">ÁREA LIBRE</string>
+     <string name="a_libre_det_ficha">(INCLUYE INTALACIONES DEPORTIVAS, HUERTOS Y JARDINES, M^2)</string>
+     <string name="descripcion_actividad_ficha">DESCRIPCIÓN</string>
+     <string name="codigo_actividad_ficha">CÓDIGO</string>
+     <string name="rango_edad_ficha">RANGO DE EDAD</string>
+     <!--INICIO ACREDITACION -->
+    <string name="zona_influenciaficha">ZONA DE INFLUENCIA</string>
+    <string name="poblacion_obejetivo_ficha">POBLA. OBJETIVO</string>
+    <string name="modalidad_ingreso_ficha">MODALIDAD DE INGRESO</string>
+    <string name="modalidad_ficha">MODALIDAD</string>
+    <string name="resolucion_judicial_ficha">RESOL. JUDICIAL</string>
+    <string name="institucion_ficha">NOMBRE DE LA INSTITUCIÓN RESPONSABLE</string>
+    <string name="lineas_actividad_ficha">LÍNEAS DE ACTIVIDAD</string>
+    <string name="car_modalidad_ficha">MODALIDAD DE ATENCIÓN</string>
+    <string name="car_nombre_ficha">NOMBRE</string>
+    <string name="acreditacion_ficha">SOLICITUD - FICHA DE ACREDITACIÓN</string>
+    <string name="servicios_ficha">SERVICIOS</string>
+    <string name="infraestructura_ficha">INFRAESTRUCTURA</string>
+    <string name="ambito_ficha">ÁMBITO DE ACCIÓN</string>
+    <string name="ambito_urbano_ficha">URBANO</string>
+    <string name="ambito_rural_ficha">RURAL</string>
+    <string name="ambito_marginal_ficha">URB. MARGINAL</string>
+    <string name="inicio_ficha">FECHA DE INICIO</string>
+    <string name="culminacion_ficha">FECHA DE CULMINACIÓN</string>
+    <string name="recursos_humanos_ficha">RECURSOS HUMANOS</string>
+    <string name="cantidad_ficha">CANTIDAD</string>
+    <string name="cant_ficha">CANT.</string>
+    <string name="nombres_ficha">NOMBRES Y APELLIDOS</string>
+    <string name="pagina_ficha">PAGINA</string>
+
+    <string name="personal_ficha">PERSONAL</string>
+    <string name="de_ficha">DE</string>
+
+        <!--INICIO ACREDITACION ANEXO1 -->
+        <string name="centro_atencion_ficha">CENTRO DE ATENCIÓN RESIDENCIAL A SU CARGO</string>
+          <!--FIN ACREDITACION ANEXO1 -->
+    <!--FIN ACREDITACION -->
+
+
+    <string-array name="array_tipo">
+        <item >INSTITUCIÓN</item>
+        <item >CAR</item>
+    </string-array>
+</resources>
