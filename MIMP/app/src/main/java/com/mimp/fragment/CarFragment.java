@@ -136,20 +136,13 @@ public class CarFragment extends Fragment {
 
     private TextView lblServiciosSeleccion;
 
-    private Button btnPoblacion1;
-    private Button btnPoblacion2;
-    private Button btnPoblacion3;
 
-    private Button btnModalidad1;
-    private Button btnModalidad2;
-    private Button btnModalidad3;
     private Button btnAgregarServicios;
 
     private Button btnAgregarZonaInfluencia;
     private Button btnAgregarRecursosHumanos;
 
     private Button btnAceptar;
-    private AdaptadorRangos adaptadorRangos;
     private AdaptadorModalidadIngreso adaptadorModalidadIngreso;
     private AdaptadorRecursosHumanos adaptadorRecursosHumanos;
     private List<clsLineaActivdad> listLineaActividad;
@@ -178,7 +171,6 @@ public class CarFragment extends Fragment {
     private clsProblacionObetivo  objModalidad2;
     private clsProblacionObetivo  objModalidad3;
 
-    private clsProblacionObetivo  objTemp;
 
     private String nuevoRango="";
     private int contM1=0;
@@ -389,61 +381,6 @@ public class CarFragment extends Fragment {
 
         listRecursosHumanos=(ListView)view.findViewById(R.id.listRecursosHumanos);
 
-        btnPoblacion1=(Button)view.findViewById(R.id.btnPoblacion1);
-        btnPoblacion1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                btnPoblacion(1);
-            }
-        });
-
-        btnPoblacion2=(Button)view.findViewById(R.id.btnPoblacion2);
-        btnPoblacion2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                btnPoblacion(2);
-            }
-        });
-
-        btnPoblacion3=(Button)view.findViewById(R.id.btnPoblacion3);
-        btnPoblacion3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                btnPoblacion(3);
-            }
-        });
-
-        btnAceptar=(Button)view.findViewById(R.id.btnAceptar);
-        btnAceptar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                btnAceptar();
-            }
-        });
-
-        btnModalidad1=(Button)view.findViewById(R.id.btnModalidad1);
-        btnModalidad1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                btnPoblacion(4);
-            }
-        });
-
-        btnModalidad2=(Button)view.findViewById(R.id.btnModalidad2);
-        btnModalidad2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                btnPoblacion(5);
-            }
-        });
-
-        btnModalidad3=(Button)view.findViewById(R.id.btnModalidad3);
-        btnModalidad3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                btnPoblacion(6);
-            }
-        });
 
         btnAgregarServicios=(Button)view.findViewById(R.id.btnAgregarServicios);
         btnAgregarServicios.setOnClickListener(new View.OnClickListener() {
@@ -619,146 +556,6 @@ public class CarFragment extends Fragment {
         }
     }
 
-    public void btnPoblacion(int  objeto)
-    {
-        final Dialog dialog = new Dialog(this.getActivity());
-        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
-        //dialog.setCancelable(false);
-        dialog.setContentView(R.layout.dialog_poblacion);
-
-        TextView lblPoblacion= (TextView)dialog.findViewById(R.id.lblPoblacion);
-        lblPoblacion.setTextSize(TypedValue.COMPLEX_UNIT_DIP, lblPoblacion.getTextSize() + SizeText);
-
-
-        TextView lblModalidad= (TextView)dialog.findViewById(R.id.lblModalidad);
-        lblModalidad.setTextSize(TypedValue.COMPLEX_UNIT_DIP, lblModalidad.getTextSize() + SizeText);
-
-        View viewPoblacion= (View)dialog.findViewById(R.id.viewPoblacion);
-        View viewModalidad= (View)dialog.findViewById(R.id.viewModalidad);
-
-        objTemp=new clsProblacionObetivo();
-        final int objFinal=objeto;
-        if(objeto==1) {
-            objTemp = objPoblacion1;
-            lblPoblacion.setText(lblPoblacion1.getText());
-        }
-        else if(objeto==2) {
-            objTemp = objPoblacion2;
-            lblPoblacion.setText(lblPoblacion2.getText());
-        }
-        else if(objeto==3){
-            objTemp = objPoblacion3;
-            lblPoblacion.setText(lblPoblacion3.getText());
-        }
-        else if(objeto==4) {
-            lblModalidad.setText(lblModalidad1.getText());
-            viewPoblacion.setVisibility(View.GONE);
-            viewModalidad.setVisibility(View.VISIBLE);
-            objTemp = objModalidad1;
-        }
-        else if(objeto==5) {
-            lblModalidad.setText(lblModalidad2.getText());
-            viewPoblacion.setVisibility(View.GONE);
-            viewModalidad.setVisibility(View.VISIBLE);
-            objTemp = objModalidad2;
-        }
-        else if(objeto==6) {
-            lblModalidad.setText(lblModalidad3.getText());
-            viewPoblacion.setVisibility(View.GONE);
-            viewModalidad.setVisibility(View.VISIBLE);
-            objTemp = objModalidad3;
-        }
-
-
-
-
-        TextView lblTModalidad= (TextView)dialog.findViewById(R.id.lblTModalidad);
-        lblTModalidad.setTextSize(TypedValue.COMPLEX_UNIT_DIP, lblTModalidad.getTextSize() + SizeText);
-
-
-
-        TextView lblDescripcion= (TextView)dialog.findViewById(R.id.lblDescripcion);
-        lblDescripcion.setTextSize(TypedValue.COMPLEX_UNIT_DIP, lblDescripcion.getTextSize() + SizeText);
-
-        TextView lblRangoEdad= (TextView)dialog.findViewById(R.id.lblRangoEdad);
-        lblRangoEdad.setTextSize(TypedValue.COMPLEX_UNIT_DIP, lblRangoEdad.getTextSize() + SizeText);
-
-        TextView lblRangoM= (TextView)dialog.findViewById(R.id.lblRangoM);
-        lblRangoM.setTextSize(TypedValue.COMPLEX_UNIT_DIP, lblRangoM.getTextSize() + SizeText);
-
-        TextView lblRangoF= (TextView)dialog.findViewById(R.id.lblRangoF);
-        lblRangoF.setTextSize(TypedValue.COMPLEX_UNIT_DIP, lblRangoF.getTextSize() + SizeText);
-
-        ListView listPoblacion= (ListView)dialog.findViewById(R.id.listPoblacion);
-        adaptadorRangos = new AdaptadorRangos(this.getActivity());
-        listPoblacion.setAdapter(adaptadorRangos);
-        clsUtilidades.setListViewHeightBasedOnChildren(listPoblacion);
-
-
-        final EditText txtPoblacion= (EditText)dialog.findViewById(R.id.txtPoblacion);
-        txtPoblacion.setText(objTemp.getDescripcion());
-        txtPoblacion.setTextSize(TypedValue.COMPLEX_UNIT_DIP, txtPoblacion.getTextSize() + SizeText);
-
-        final EditText txtPoblacionCategoria= (EditText)dialog.findViewById(R.id.txtPoblacionCategoria);
-        txtPoblacionCategoria.setText(objTemp.getCodigo_descricion());
-        txtPoblacionCategoria.setTextSize(TypedValue.COMPLEX_UNIT_DIP, txtPoblacionCategoria.getTextSize() + SizeText);
-
-        final EditText txtPoblacionCategoriaDes= (EditText)dialog.findViewById(R.id.txtPoblacionCategoriaDes);
-        txtPoblacionCategoriaDes.setText(objTemp.getCodigo());
-        txtPoblacionCategoriaDes.setTextSize(TypedValue.COMPLEX_UNIT_DIP, txtPoblacionCategoriaDes.getTextSize() + SizeText);
-
-        Button btn_aceptar = (Button) dialog.findViewById(R.id.btnAceptar);
-        btn_aceptar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                objTemp.setDescripcion(txtPoblacion.getText().toString());
-                objTemp.setCodigo_descricion(txtPoblacionCategoria.getText().toString());
-                objTemp.setCodigo(txtPoblacionCategoriaDes.getText().toString());
-                if(objFinal==1) {
-                    lblPoblacionDescripcion1.setText(objTemp.getDescripcion());
-                    lblPoblacionCategoria1.setText(objTemp.getCodigo_descricion());
-                    lblPoblacionCategoriaDes1.setText(objTemp.getCodigo());
-                    objPoblacion1 = objTemp;
-                    getListaPoblacionObejtivo();
-                }
-                else if(objFinal==2) {
-                    objPoblacion2 = objTemp;
-                    lblPoblacionDescripcion2.setText(objTemp.getDescripcion());
-                    lblPoblacionCategoria2.setText(objTemp.getCodigo_descricion());
-                    lblPoblacionCategoriaDes2.setText(objTemp.getCodigo());
-                    getListaPoblacionObejtivo();
-                }
-                else if(objFinal==3) {
-                    objPoblacion3 = objTemp;
-                    lblPoblacionDescripcion3.setText(objTemp.getDescripcion());
-                    lblPoblacionCategoria3.setText(objTemp.getCodigo_descricion());
-                    lblPoblacionCategoriaDes3.setText(objTemp.getCodigo());
-                    getListaPoblacionObejtivo();
-                }
-                else if(objFinal==4) {
-                    objModalidad1 = objTemp;
-                    getListaModalidadIngreso();
-                }
-                else if(objFinal==5) {
-                    objModalidad2 = objTemp;
-                    getListaModalidadIngreso();
-                }
-                else if(objFinal==6) {
-                    objModalidad3 = objTemp;
-                    getListaModalidadIngreso();
-                }
-
-
-                dialog.dismiss();
-            }
-        });
-        dialog.show();
-
-
-
-       // adaptadorRangos
-    }
     public void btnLineaActividad(){
             final Dialog dialog = new Dialog(this.getActivity());
             dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
@@ -885,7 +682,7 @@ public class CarFragment extends Fragment {
 
             View item = inflater.inflate(R.layout.list_poblacion_objetivo, null);
 
-
+/*
 
             TextView lblRangoEdad= (TextView)item.findViewById(R.id.lblRangoEdad);
             if((listRangos.size()-1)==position)
@@ -946,7 +743,7 @@ public class CarFragment extends Fragment {
             TextView lblRangoT3= (TextView)item.findViewById(R.id.lblRangoT3);
             lblRangoT3.setText(""+total);
             lblRangoT3.setTextSize(TypedValue.COMPLEX_UNIT_DIP, lblRangoT3.getTextSize() + SizeText);
-
+*/
             return(item);
         }
 
@@ -977,13 +774,63 @@ public class CarFragment extends Fragment {
                 lblRangoEdad.setText(listRangos.get(position).getRango());
             lblRangoEdad.setTextSize(TypedValue.COMPLEX_UNIT_DIP, lblRangoEdad.getTextSize() + SizeText);
 
-            TextView lblRangoM1= (TextView)item.findViewById(R.id.lblRangoM1);
-            lblRangoM1.setText(""+objModalidad1.getList().get(position).getRangoM());
-            lblRangoM1.setTextSize(TypedValue.COMPLEX_UNIT_DIP, lblRangoM1.getTextSize() + SizeText);
 
-            TextView lblRangoF1= (TextView)item.findViewById(R.id.lblRangoF1);
-            lblRangoF1.setText("" + objModalidad1.getList().get(position).getRangoF());
-            lblRangoF1.setTextSize(TypedValue.COMPLEX_UNIT_DIP, lblRangoF1.getTextSize() + SizeText);
+
+
+
+            final EditText txtRangoM1 = (EditText) item.findViewById(R.id.txtRangoM1);
+            if(objModalidad1.getList().get(position).getRangoM()>0)
+                txtRangoM1.setText(""+objModalidad1.getList().get(position).getRangoM());
+            else
+                txtRangoM1.setText("");
+            txtRangoM1.setTextSize(TypedValue.COMPLEX_UNIT_DIP, txtRangoM1.getTextSize() + SizeText);
+            txtRangoM1.addTextChangedListener(new TextWatcher() {
+
+                @Override
+                public void onTextChanged(CharSequence s, int start, int before, int count) {
+                    if (!txtRangoM1.getText().toString().equals(""))
+                        objModalidad1.getList().get(pos).setRangoM(Integer.parseInt(txtRangoM1.getText().toString()));
+                }
+
+                @Override
+                public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+                }
+
+                @Override
+                public void afterTextChanged(Editable s) {
+                }
+            });
+
+
+            final EditText txtRangoF1 = (EditText) item.findViewById(R.id.txtRangoF1);
+            if(objModalidad1.getList().get(position).getRangoM()>0)
+                txtRangoF1.setText(""+objModalidad1.getList().get(position).getRangoM());
+            else
+                txtRangoF1.setText("");
+            txtRangoF1.setTextSize(TypedValue.COMPLEX_UNIT_DIP, txtRangoF1.getTextSize() + SizeText);
+            txtRangoF1.addTextChangedListener(new TextWatcher() {
+
+                @Override
+                public void onTextChanged(CharSequence s, int start, int before, int count) {
+                    if (!txtRangoF1.getText().toString().equals(""))
+                        objModalidad1.getList().get(pos).setRangoM(Integer.parseInt(txtRangoF1.getText().toString()));
+                }
+
+                @Override
+                public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+                }
+
+                @Override
+                public void afterTextChanged(Editable s) {
+                }
+            });
+
+
+
+
+
+
+
 
             int total=objModalidad1.getList().get(position).getRangoM()+objModalidad1.getList().get(position).getRangoF();
             contT1+=total;
@@ -994,13 +841,53 @@ public class CarFragment extends Fragment {
             lblRangoT1.setTextSize(TypedValue.COMPLEX_UNIT_DIP, lblRangoT1.getTextSize() + SizeText);
 
 
-            TextView lblRangoM2= (TextView)item.findViewById(R.id.lblRangoM2);
-            lblRangoM2.setText("" + objModalidad2.getList().get(position).getRangoM());
-            lblRangoM2.setTextSize(TypedValue.COMPLEX_UNIT_DIP, lblRangoM2.getTextSize() + SizeText);
+            final EditText txtRangoM2 = (EditText) item.findViewById(R.id.txtRangoM2);
+            if(objModalidad2.getList().get(position).getRangoM()>0)
+                txtRangoM2.setText(""+objModalidad2.getList().get(position).getRangoM());
+            else
+                txtRangoM2.setText("");
+            txtRangoM2.setTextSize(TypedValue.COMPLEX_UNIT_DIP, txtRangoM2.getTextSize() + SizeText);
+            txtRangoM2.addTextChangedListener(new TextWatcher() {
 
-            TextView lblRangoF2= (TextView)item.findViewById(R.id.lblRangoF2);
-            lblRangoF2.setText("" + objModalidad2.getList().get(position).getRangoF());
-            lblRangoF2.setTextSize(TypedValue.COMPLEX_UNIT_DIP, lblRangoF2.getTextSize() + SizeText);
+                @Override
+                public void onTextChanged(CharSequence s, int start, int before, int count) {
+                    if (!txtRangoM2.getText().toString().equals(""))
+                        objModalidad2.getList().get(pos).setRangoM(Integer.parseInt(txtRangoM2.getText().toString()));
+                }
+
+                @Override
+                public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+                }
+
+                @Override
+                public void afterTextChanged(Editable s) {
+                }
+            });
+
+
+            final EditText txtRangoF2 = (EditText) item.findViewById(R.id.txtRangoF2);
+            if(objModalidad2.getList().get(position).getRangoM()>0)
+                txtRangoF2.setText(""+objModalidad2.getList().get(position).getRangoM());
+            else
+                txtRangoF2.setText("");
+            txtRangoF2.setTextSize(TypedValue.COMPLEX_UNIT_DIP, txtRangoF2.getTextSize() + SizeText);
+            txtRangoF2.addTextChangedListener(new TextWatcher() {
+
+                @Override
+                public void onTextChanged(CharSequence s, int start, int before, int count) {
+                    if (!txtRangoF2.getText().toString().equals(""))
+                        objModalidad2.getList().get(pos).setRangoM(Integer.parseInt(txtRangoF2.getText().toString()));
+                }
+
+                @Override
+                public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+                }
+
+                @Override
+                public void afterTextChanged(Editable s) {
+                }
+            });
+
 
             total=objModalidad2.getList().get(position).getRangoM()+objModalidad2.getList().get(position).getRangoF();
             contT2+=total;
@@ -1011,13 +898,54 @@ public class CarFragment extends Fragment {
             lblRangoT2.setTextSize(TypedValue.COMPLEX_UNIT_DIP, lblRangoT2.getTextSize() + SizeText);
 
 
-            TextView lblRangoM3= (TextView)item.findViewById(R.id.lblRangoM3);
-            lblRangoM3.setText(""+objModalidad3.getList().get(position).getRangoM());
-            lblRangoM3.setTextSize(TypedValue.COMPLEX_UNIT_DIP, lblRangoM3.getTextSize() + SizeText);
+            final EditText txtRangoM3 = (EditText) item.findViewById(R.id.txtRangoM3);
+            if(objModalidad3.getList().get(position).getRangoM()>0)
+                txtRangoM3.setText(""+objModalidad3.getList().get(position).getRangoM());
+            else
+                txtRangoM3.setText("");
+            txtRangoM3.setTextSize(TypedValue.COMPLEX_UNIT_DIP, txtRangoM3.getTextSize() + SizeText);
+            txtRangoM3.addTextChangedListener(new TextWatcher() {
 
-            TextView lblRangoF3= (TextView)item.findViewById(R.id.lblRangoF3);
-            lblRangoF3.setText("" + objModalidad3.getList().get(position).getRangoF());
-            lblRangoF3.setTextSize(TypedValue.COMPLEX_UNIT_DIP, lblRangoF3.getTextSize() + SizeText);
+                @Override
+                public void onTextChanged(CharSequence s, int start, int before, int count) {
+                    if (!txtRangoM3.getText().toString().equals(""))
+                        objModalidad3.getList().get(pos).setRangoM(Integer.parseInt(txtRangoM3.getText().toString()));
+                }
+
+                @Override
+                public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+                }
+
+                @Override
+                public void afterTextChanged(Editable s) {
+                }
+            });
+
+
+            final EditText txtRangoF3 = (EditText) item.findViewById(R.id.txtRangoF3);
+            if(objModalidad3.getList().get(position).getRangoM()>0)
+                txtRangoF3.setText(""+objModalidad3.getList().get(position).getRangoM());
+            else
+                txtRangoF3.setText("");
+            txtRangoF3.setTextSize(TypedValue.COMPLEX_UNIT_DIP, txtRangoF3.getTextSize() + SizeText);
+            txtRangoF3.addTextChangedListener(new TextWatcher() {
+
+                @Override
+                public void onTextChanged(CharSequence s, int start, int before, int count) {
+                    if (!txtRangoF3.getText().toString().equals(""))
+                        objModalidad3.getList().get(pos).setRangoM(Integer.parseInt(txtRangoF3.getText().toString()));
+                }
+
+                @Override
+                public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+                }
+
+                @Override
+                public void afterTextChanged(Editable s) {
+                }
+            });
+
+
 
             total=objModalidad3.getList().get(position).getRangoM()+objModalidad3.getList().get(position).getRangoF();
             contT3+=total;
@@ -1100,101 +1028,6 @@ public class CarFragment extends Fragment {
 
 
 
-    class AdaptadorRangos extends ArrayAdapter {
-
-        Activity context;
-        AdaptadorRangos(Activity context) {
-            super(context, R.layout.list_poblacion, listRangos);
-            this.context = context;
-        }
-
-
-        public View getView(int position, View convertView, ViewGroup parent) {
-            final int pos=position;
-            LayoutInflater inflater = context.getLayoutInflater();
-
-            View item = inflater.inflate(R.layout.list_poblacion, null);
-
-            final EditText txtRangoEdad = (EditText) item.findViewById(R.id.txtRangoEdad);
-            TextView lblRangoEdad = (TextView) item.findViewById(R.id.lblRangoEdad);
-
-            if((listRangos.size()-1)==position) {
-                lblRangoEdad.setVisibility(View.GONE);
-
-                txtRangoEdad.setVisibility(View.VISIBLE);
-                txtRangoEdad.setTextSize(TypedValue.COMPLEX_UNIT_DIP, txtRangoEdad.getTextSize() + SizeText);
-                txtRangoEdad.setText(nuevoRango);
-                txtRangoEdad.addTextChangedListener(new TextWatcher() {
-
-                    @Override
-                    public void onTextChanged(CharSequence s, int start, int before, int count) {
-                        nuevoRango=txtRangoEdad.getText().toString();
-                    }
-
-                    @Override
-                    public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-                    }
-
-                    @Override
-                    public void afterTextChanged(Editable s) {
-                    }
-                });
-            }
-            else {
-                lblRangoEdad.setText(listRangos.get(position).getRango());
-                lblRangoEdad.setTextSize(TypedValue.COMPLEX_UNIT_DIP, lblRangoEdad.getTextSize() + SizeText);
-            }
-
-            final EditText txtRangoM = (EditText) item.findViewById(R.id.txtRangoM);
-            if(objTemp.getList().get(position).getRangoM()>0)
-                txtRangoM.setText(""+objTemp.getList().get(position).getRangoM());
-            else
-                txtRangoM.setText("");
-            txtRangoM.setTextSize(TypedValue.COMPLEX_UNIT_DIP, txtRangoM.getTextSize() + SizeText);
-            txtRangoM.addTextChangedListener(new TextWatcher() {
-
-                @Override
-                public void onTextChanged(CharSequence s, int start, int before, int count) {
-                    if(!txtRangoM.getText().toString().equals(""))
-                    objTemp.getList().get(pos).setRangoM(Integer.parseInt(txtRangoM.getText().toString()));
-                }
-
-                @Override
-                public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-                }
-
-                @Override
-                public void afterTextChanged(Editable s) {
-                }
-            });
-
-            final EditText txtRangoF = (EditText) item.findViewById(R.id.txtRangoF);
-            if(objTemp.getList().get(position).getRangoF()>0)
-                txtRangoF.setText(""+objTemp.getList().get(position).getRangoF());
-            else
-                txtRangoF.setText("");
-            txtRangoF.setTextSize(TypedValue.COMPLEX_UNIT_DIP, txtRangoF.getTextSize() + SizeText);
-            txtRangoF.addTextChangedListener(new TextWatcher() {
-
-                @Override
-                public void onTextChanged(CharSequence s, int start, int before, int count) {
-                    if(!txtRangoF.getText().toString().equals(""))
-                        objTemp.getList().get(pos).setRangoF(Integer.parseInt(txtRangoF.getText().toString()));
-                }
-
-                @Override
-                public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-                }
-
-                @Override
-                public void afterTextChanged(Editable s) {
-                }
-            });
-            return(item);
-        }
-
-
-    }
 
     public void ComboRecursosHumanos(){
         List<clsProfesion> lista= clsDatosTem.getProfesion();

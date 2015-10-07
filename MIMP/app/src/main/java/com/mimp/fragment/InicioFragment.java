@@ -101,9 +101,7 @@ public class InicioFragment extends Fragment {
             lblNumero.setText(""+(position+1));
             lblNumero.setTextSize(TypedValue.COMPLEX_UNIT_DIP, lblNumero.getTextSize() + SizeText);
 
-            TextView lblVer= (TextView)item.findViewById(R.id.lblVer);
-            lblVer.setText("");
-            lblVer.setTextSize(TypedValue.COMPLEX_UNIT_DIP, lblVer.getTextSize() + SizeText);
+
 
             TextView lblOrganismo= (TextView)item.findViewById(R.id.lblOrganismo);
             lblOrganismo.setText(list.get(position).getNombre());

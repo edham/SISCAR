@@ -19,30 +19,31 @@
             android:textColor="?android:textColorSecondary"
             android:textSize="@dimen/text_2"
             android:textStyle="bold" />
-        <TextView
-            android:id="@+id/lblRangoM1"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/barra_clara"
-            android:gravity="center"
-            android:layout_weight="0.7"
-            android:text="M"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textColor="?android:textColorSecondary"
-            android:textSize="@dimen/text_2"
-            android:textStyle="bold" />
-        <TextView
-            android:id="@+id/lblRangoF1"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/barra_clara"
-            android:gravity="center"
-            android:layout_weight="0.7"
-            android:text="F"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textColor="?android:textColorSecondary"
-            android:textSize="@dimen/text_2"
-            android:textStyle="bold" />
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.7"
+        android:gravity="center"
+        android:hint="@string/hint_numero"
+        android:textSize="@dimen/text_2"
+        android:inputType="number"
+        android:ems="10"
+        android:textColor="?android:textColorSecondary"
+        android:background="@drawable/barra"
+        android:id="@+id/txtRangoM1" />
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.7"
+        android:gravity="center"
+        android:hint="@string/hint_numero"
+        android:textSize="@dimen/text_2"
+        android:inputType="number"
+        android:ems="10"
+        android:textColor="?android:textColorSecondary"
+        android:background="@drawable/barra"
+        android:id="@+id/txtRangoF1" />
+
         <TextView
             android:id="@+id/lblRangoT1"
             android:layout_width="fill_parent"
@@ -55,30 +56,30 @@
             android:textColor="?android:textColorSecondary"
             android:textSize="@dimen/text_2"
             android:textStyle="bold" />
-        <TextView
-            android:id="@+id/lblRangoM2"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/barra_clara"
-            android:gravity="center"
-            android:layout_weight="0.7"
-            android:text="M"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textColor="?android:textColorSecondary"
-            android:textSize="@dimen/text_2"
-            android:textStyle="bold" />
-        <TextView
-            android:id="@+id/lblRangoF2"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/barra_clara"
-            android:gravity="center"
-            android:layout_weight="0.7"
-            android:text="F"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textColor="?android:textColorSecondary"
-            android:textSize="@dimen/text_2"
-            android:textStyle="bold" />
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.7"
+        android:gravity="center"
+        android:hint="@string/hint_numero"
+        android:textSize="@dimen/text_2"
+        android:inputType="number"
+        android:ems="10"
+        android:textColor="?android:textColorSecondary"
+        android:background="@drawable/barra"
+        android:id="@+id/txtRangoM2" />
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.7"
+        android:gravity="center"
+        android:hint="@string/hint_numero"
+        android:textSize="@dimen/text_2"
+        android:inputType="number"
+        android:ems="10"
+        android:textColor="?android:textColorSecondary"
+        android:background="@drawable/barra"
+        android:id="@+id/txtRangoF2" />
         <TextView
             android:id="@+id/lblRangoT2"
             android:layout_width="fill_parent"
@@ -91,30 +92,30 @@
             android:textColor="?android:textColorSecondary"
             android:textSize="@dimen/text_2"
             android:textStyle="bold" />
-        <TextView
-            android:id="@+id/lblRangoM3"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/barra_clara"
-            android:gravity="center"
-            android:layout_weight="0.7"
-            android:text="M"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textColor="?android:textColorSecondary"
-            android:textSize="@dimen/text_2"
-            android:textStyle="bold" />
-        <TextView
-            android:id="@+id/lblRangoF3"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/barra_clara"
-            android:gravity="center"
-            android:layout_weight="0.7"
-            android:text="F"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textColor="?android:textColorSecondary"
-            android:textSize="@dimen/text_2"
-            android:textStyle="bold" />
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.7"
+        android:gravity="center"
+        android:hint="@string/hint_numero"
+        android:textSize="@dimen/text_2"
+        android:inputType="number"
+        android:ems="10"
+        android:textColor="?android:textColorSecondary"
+        android:background="@drawable/barra"
+        android:id="@+id/txtRangoM3" />
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.7"
+        android:gravity="center"
+        android:hint="@string/hint_numero"
+        android:textSize="@dimen/text_2"
+        android:inputType="number"
+        android:ems="10"
+        android:textColor="?android:textColorSecondary"
+        android:background="@drawable/barra"
+        android:id="@+id/txtRangoF3" />
         <TextView
             android:id="@+id/lblRangoT3"
             android:layout_width="fill_parent"
